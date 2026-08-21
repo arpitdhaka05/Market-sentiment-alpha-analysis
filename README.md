@@ -23,7 +23,7 @@
 
 ---
 
-## ⚡ TL;DR — What Was Found
+##  TL;DR — What Was Found
 
 | Signal | Finding |
 |--------|---------|
@@ -35,32 +35,32 @@
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 market-sentiment-alpha-analysis/
 │
-├── 📂 data/                       # Data files
+├──  data/                       # Data files
 │   ├── sentiment.csv              # Bitcoin Fear/Greed Index (2018–2025, public)
-│   ├── trader_data.csv            # ⚠️ Not included (proprietary Hyperliquid data)
+│   ├── trader_data.csv            #  Not included (proprietary Hyperliquid data)
 │   └── README.md                  # Data schema and provenance documentation
 │
-├── 📂 Output/                     # Pipeline artifacts
+├──  Output/                     # Pipeline artifacts
 │   └── merged_trader_sentiment.csv # Phase 1 pre-merged dataset (77 rows, ready to use)
 │
-├── 📂 images/                     # Auto-generated chart exports
+├──  images/                     # Auto-generated chart exports
 │   ├── pnl_distribution.png       # Phase 2: PnL by regime boxplot
 │   ├── long_short_bias.png        # Phase 2: Directional bias analysis
 │   ├── trader_archetypes.png      # Phase 2: K-Means cluster scatter
 │   └── monte_carlo.png            # Phase 4: Strategy fan chart
 │
-├── 📂 Notebook/
+├──  Notebook/
 │   └── Final_Notebook.ipynb       # Core analytical engine (all 4 phases, pre-run)
 │
-├── 📂 src/
+├──  src/
 │   └── pipeline.py                # Extracted pipeline functions (reusable, testable)
 │
-├── streamlit_app.py               # 🆕 Interactive dashboard (Fear/Greed Explorer + Strategy Sim)
+├── streamlit_app.py               #  Interactive dashboard (Fear/Greed Explorer + Strategy Sim)
 ├── save_images.py                 # Standalone chart regeneration script
 ├── requirements.txt               # All Python dependencies
 ├── WRITEUP.md                     # Business memo: insights + strategy rules
@@ -69,7 +69,7 @@ market-sentiment-alpha-analysis/
 
 ---
 
-## 🔬 Analytical Pipeline
+##  Analytical Pipeline
 
 ```
 Raw Data
@@ -89,7 +89,7 @@ Raw Data
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ```bash
 # 1. Clone and enter the repo
@@ -117,7 +117,7 @@ python save_images.py
 
 ---
 
-## 📌 Key Design Decisions
+##  Key Design Decisions
 
 | Decision | Rationale |
 |----------|-----------|
@@ -129,7 +129,7 @@ python save_images.py
 
 ---
 
-## 🔭 What I'd Build Next
+##  What I'd Build Next
 
 ```
 Month 2 Roadmap
@@ -142,7 +142,7 @@ Month 2 Roadmap
 
 ---
 
-## 🔗 Related Projects — The Quant Ecosystem
+##  Related Projects — The Quant Ecosystem
 
 This project is part of a connected quantitative finance research portfolio:
 
